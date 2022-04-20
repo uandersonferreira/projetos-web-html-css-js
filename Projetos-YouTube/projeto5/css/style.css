@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+}
+
+header{/*Elemento Azul*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px 5%;
+    
+}
+
+.logo{/*1° Elemento Vermelho*/
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.logo > span{
+    font-weight: 700;
+}
+
+nav > ul{/*2° Elemento Vermelho*/
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+
+section{
+  overflow: hidden;/*Para esconder tudo que passar do tamaho da tabela(barra de rola quando aparece)*/
+
+}
+
+.promocao-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+
+}
+
+.promocao-header > span{
+    font-weight: 700;
+    color: #161616;
+}
+
+.line{
+    width: 100%;
+    padding: 1px;
+    background-color: #eee
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+
+.colunas{
+ display: flex;
+ flex-direction: column;
+ gap: 50px;
+}
+
+.produtos{
+ display: flex;
+ flex-direction: column;
+ gap: 7px;
+}
+
+.produtos > img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;/*Corta a imagem para não ficar distorcida/ pesquisar a respeito*/
+    border-radius: 10px;
+}
+
+.produtos > span{
+ font-weight: 700;
+}
+
+.price{
+    color: #5ca720;
+}
+
+footer{
+    background-color: #eee;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #ddd;
+    padding: 20px 5%;
+}
+
+.footer-top-left > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-top-left > ul > a{
+    font-weight:700;
+    color: #161616;
+    text-decoration: none;/*Tira o traço do link*/
+}
+
+.footer-top-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-top-right > span{
+    font-weight: 700;
+    color: #161616;
+}
+
+.footer-novas-ofertas{
+   display: flex;
+   align-items: center; 
+}
+
+.footer-input{
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border:1px solid #eee;
+    border-radius: 4px;
+}
+
+.footer-button{
+   height:40px;
+   width: 90px;
+   border: 1px solid #eee;
+   background-color: #5ca720;
+   color: #fff;
+   border-top-right-radius:4px ;
+   border-bottom-right-radius: 4px;
+}
+
+.footer-botton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5% ;/* esquerda direita | emCima emBaixo*/
+    border-top: 2px solid #ddd;
+}
+
+.footer-botton-left, .footer-botton-right{
+    display: flex;
+    gap: 15px;
+
+}
+
+.footer-img{
+    width:30px;
+    height: 30px;
+    object-fit:contain;
+}
