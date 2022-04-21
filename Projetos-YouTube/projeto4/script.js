@@ -48,15 +48,5 @@ btnValue.addEventListener('click', () => {
 })
 
 /*
-function codificar() {
-	var reg = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?|magnet:\?xt=urn:btih:/
-	var valor = document.getElementById("teste").value;
-	var encode = window.btoa(valor);
-
-	if (reg.test(valor)) {
-		document.getElementById("saida").innerHTML = encode;
-	} else {
-		alert("Url Invalido");
-	}
-}
+- TENTAR INSERIR UMA FUNCIONALIDADE DE DWANLOAD DO QRCODE
 */
