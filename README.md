@@ -92,9 +92,26 @@ Link do tutorial: https://www.youtube.com/watch?v=ngKPeseBlmc&list=PLOfKzAi2JkAg
 Link do tutorial: https://www.youtube.com/watch?v=rboSA7728kk&list=PLOfKzAi2JkAii9XnoLx3r6jsCdg4bs4t7
 
 
-
-
 <br/>
+
+## Projeto 8
+
+-> Construção de um Interface de um site simples usando Bootstrap e Unsplash que é uma fonte da internet de imagens livremente utilizáveis. 
+
+- Tecnologias usadas: 
+   - HTML5
+   - Bootstrap
+   
+   
+
+![Home](Imagens-projects/Projeto8-1.png)
+![Home](Imagens-projects/projeto8-2.png)
+![Home](Imagens-projects/projeto8-3.png)
+
+
+
+
+
 
 
 
