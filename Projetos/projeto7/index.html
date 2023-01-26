@@ -1,32 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animação CSS e JavaScript</title>
-    <link rel="stylesheet" href="styleAnimation.css">
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <section>
-        <h2>JS Animation</h2>
-        <div class="banner">
-            <div class="blocks"></div>
-        </div>
-        
-    </section>
-    
+    <nav class="navigation">
+        <ul>
+                    <!--hOME-->
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+                                  <!--profile-->
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+                                              <!--Message-->
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </span>
+                    <span class="text">Message</span>
+                </a>
+            </li>
+                                              <!--Photos-->
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="camera-outline"></ion-icon>                    </span>
+                    <span class="text">Photos</span>
+                </a>
+            </li>
+                                              <!--Settings-->
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>                    </span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </nav>
+
     <script>
-        const banner = document.getElementsByClassName('banner')[0];
-        const blocks = document.getElementsByClassName('blocks');
+        const list = document.querySelectorAll('.list');
 
-        for (let i= 1; i < 400; i++) {
-            banner.innerHTML += "<div class='blocks'></div>";
-            blocks[i].style.animationDelay = `${i *0.05}s`;
-            
+        function activeLink(){
+            list.forEach((item) => item.classList.remove('active'));
+            this.classList.add('active');
         }
-
+        list.forEach((item) => item.addEventListener('click', activeLink));
     </script>
+
+                                        <!-- Script the Icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   
 </body>
 </html>
