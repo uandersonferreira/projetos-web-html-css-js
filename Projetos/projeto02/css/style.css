@@ -24,10 +24,11 @@ p {
   background-size: cover;
 }
 
-.banner .content {
+ .banner .content {
   max-width: 900px;
   text-align: center;
 }
+
 
 .banner .content h2 {
   font-size: 5em;
@@ -112,7 +113,7 @@ header.sticky .navigation li a {
 
 header.sticky .navigation li a:hover {
   color: #ff0157;
-}
+} */
 
 section {
   padding: 100px;
@@ -485,12 +486,14 @@ section {
     margin-bottom: 30px;
   }
 }
+
 @media (max-width: 420px) {
   .banner .content h2 {
     font-size: 2.2em;
     color: #fff;
   }
 }
+
 @media (max-width: 390px) {
   header.sticky {
     padding: 10px 20px;
