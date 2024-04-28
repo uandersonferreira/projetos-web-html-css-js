@@ -1,32 +1,32 @@
-# PROJETOS-WEB
- Repositório central dos projetos web, voltado para o meu estudo de desenvolvimento web, por meio de projetos pessoais e projetos de terceiros do youtuber.
+# Projetos web com html, css e JavaScript
+Repositório central dos projetos web, voltado para o meu estudo de desenvolvimento web, por meio de projetos pessoais e projetos de terceiros do youtuber.
 
 
- ## Projeto 1
+## Projeto 1
 
 - Construção de uma página de login simples
-  
-- Tecnologias usadas: 
-   - HTML5
-   - CSS3
+
+- Tecnologias usadas:
+    - HTML5
+    - CSS3
 
 
 ![Pagina de Login](Imagens-projects/projeto1.png)
 
-Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto01/
+Link do projeto: https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto01/
 
-Link do tutorial: https://www.youtube.com/watch?v=69-WfrVBli8 
+Link do tutorial: https://www.youtube.com/watch?v=69-WfrVBli8
 
 <br/>
 
- ## Projeto 2
+## Projeto 2
 
 - Construção de uma interface de um site culinário responsivo, compatível com dispositivos móveis.
-  
-- Tecnologias usadas: 
-   - HTML5
-   - CSS3
-   - JavaScript
+
+- Tecnologias usadas:
+    - HTML5
+    - CSS3
+    - JavaScript
 
 
 ![Home](Imagens-projects/projeto2-1.png)
@@ -37,7 +37,7 @@ Link do tutorial: https://www.youtube.com/watch?v=69-WfrVBli8
 ![Testimonial](Imagens-projects/projeto2-6.png)
 ![Contact](Imagens-projects/projeto2-7.png)
 
-Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto02/
+Link do projeto: https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto02/
 
 
 Link do tutorial: https://www.youtube.com/watch?v=ac5nmWOkBEY
@@ -47,10 +47,10 @@ Link do tutorial: https://www.youtube.com/watch?v=ac5nmWOkBEY
 ## Projeto 4
 
 - Consumindo uma api de geração de QRcode
-- Tecnologias usadas: 
-   - HTML5
-   - CSS3
-   - JavaScript
+- Tecnologias usadas:
+    - HTML5
+    - CSS3
+    - JavaScript
 
 ### 1°- Página Inicial
 ![Gerador de QRcode](Imagens-projects/proejeto4-1.png)
@@ -58,7 +58,7 @@ Link do tutorial: https://www.youtube.com/watch?v=ac5nmWOkBEY
 ### 2°- Gerando o QRcode baseado na url passada
 ![Gerador de QRcode](Imagens-projects/projeto4-2.png)
 
-Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto04/
+Link do projeto: https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto04/
 
 Link do tutorial: https://www.youtube.com/watch?v=UOIDhGCGCio
 
@@ -69,9 +69,9 @@ Link do tutorial: https://www.youtube.com/watch?v=UOIDhGCGCio
 
 -> Construção de um Interface para um site de vendas, utilizando o conceito de Pixel Perfect.
 
-- Tecnologias usadas: 
-   - HTML5
-   - CSS3
+- Tecnologias usadas:
+    - HTML5
+    - CSS3
 
 ![Site de Vendas](Imagens-projects/projeto5-1.png)
 
@@ -80,7 +80,7 @@ Link do tutorial: https://www.youtube.com/watch?v=UOIDhGCGCio
 ![Site de Vendas](Imagens-projects/projeto5-3.png)
 
 
-Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto05/
+Link do projeto: https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto05/
 
 Link do tutorial: https://www.youtube.com/watch?v=ngKPeseBlmc&list=PLOfKzAi2JkAgYAH-lwDzLqXwNdYAWtyei
 
@@ -91,15 +91,15 @@ Link do tutorial: https://www.youtube.com/watch?v=ngKPeseBlmc&list=PLOfKzAi2JkAg
 
 ->Construção de um Banner, aplicando os conceitos do Pixel Perfect.
 
-- Tecnologias usadas: 
-   - HTML5
-   - CSS3
-   
+- Tecnologias usadas:
+    - HTML5
+    - CSS3
+
 
 ![Banner](Imagens-projects/projeto6.png)
 
 
-Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto06/
+Link do projeto: https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto06/
 
 Link do tutorial: https://www.youtube.com/watch?v=rboSA7728kk&list=PLOfKzAi2JkAii9XnoLx3r6jsCdg4bs4t7
 
@@ -108,26 +108,26 @@ Link do tutorial: https://www.youtube.com/watch?v=rboSA7728kk&list=PLOfKzAi2JkAi
 
 ## Projeto 8
 
--> Construção de um Interface de um site simples usando Bootstrap e Unsplash que é uma fonte da internet de imagens livremente utilizáveis. 
+-> Construção de um Interface de um site simples usando Bootstrap e Unsplash que é uma fonte da internet de imagens livremente utilizáveis.
 
-- Tecnologias usadas: 
-   - HTML5
-   - Bootstrap
-   
-   
+- Tecnologias usadas:
+    - HTML5
+    - Bootstrap
+
+
 
 ![Home](Imagens-projects/projeto8-1.png)
 ![Home](Imagens-projects/projeto8-2.png)
 ![Home](Imagens-projects/projeto8-3.png)
 
 
-Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto08/
+Link do projeto: https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto08/
 
 ## Projeto 9
-Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto09/
+Link do projeto: https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto09/
 
 ## Projeto 10
-Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto010/
+Link do projeto: https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto010/
 
 
 
