@@ -58,7 +58,7 @@ Link do tutorial: https://www.youtube.com/watch?v=ac5nmWOkBEY
 ### 2°- Gerando o QRcode baseado na url passada
 ![Gerador de QRcode](Imagens-projects/projeto4-2.png)
 
-Link do projeto:
+Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto04/
 
 Link do tutorial: https://www.youtube.com/watch?v=UOIDhGCGCio
 
@@ -80,7 +80,7 @@ Link do tutorial: https://www.youtube.com/watch?v=UOIDhGCGCio
 ![Site de Vendas](Imagens-projects/projeto5-3.png)
 
 
-Link do projeto:
+Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto05/
 
 Link do tutorial: https://www.youtube.com/watch?v=ngKPeseBlmc&list=PLOfKzAi2JkAgYAH-lwDzLqXwNdYAWtyei
 
@@ -99,7 +99,7 @@ Link do tutorial: https://www.youtube.com/watch?v=ngKPeseBlmc&list=PLOfKzAi2JkAg
 ![Banner](Imagens-projects/projeto6.png)
 
 
-Link do projeto:
+Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto06/
 
 Link do tutorial: https://www.youtube.com/watch?v=rboSA7728kk&list=PLOfKzAi2JkAii9XnoLx3r6jsCdg4bs4t7
 
@@ -121,7 +121,7 @@ Link do tutorial: https://www.youtube.com/watch?v=rboSA7728kk&list=PLOfKzAi2JkAi
 ![Home](Imagens-projects/projeto8-3.png)
 
 
-Link do projeto:
+Link do projeto: https://uandersonferreira.github.io/PROJETOS-WEB/Projetos/projeto08/
 
 
 
