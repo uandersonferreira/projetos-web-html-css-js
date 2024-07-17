@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Uanderson <span>.</span></a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">Sobre</a></li>
+        <li><a href="#project" onclick="toggleMenu();">Projetos</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contatos</a></li>
+      </ul>
+    </header>
+
+    <section class="banner" id="banner">
+      <div class="content">
+        <h2>Desenvolvedor Backend Java</h2>
+        <p>
+          Sou um entusiasta da tecnologia no início da carreira, sempre buscando
+          aprender e me desenvolver. Com uma curiosidade incessante e paixão por
+          resolver problemas, estou trilhando o caminho para ser um
+          Desenvolvedor Backend Java. Se você procura alguém motivado, curioso e
+          pronto para desafios, você está no lugar certo! 🚀
+        </p>
+        <a href="#project" class="btn"> Visualizar Projetos</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="row">
+        <div class="col50">
+          <h2 class="titletext">#<span>S</span>obre mim 🚀</h2>
+          <p>
+            Sou um jovem de 22 anos, crescido numa cidade pequena do estado de
+            Minas Gerais e que se mudou para o Tocantins em 2018 com minha
+            família.
+          </p>
+          <p>
+            Meu interesse por tecnologia surgiu quando ganhei uma bolsa de
+            estudo e tive a oportunidade de fazer um curso técnico em
+            informática no início do ensino médio. Gostei muito de programação
+            e, incentivado pela minha família e professora, resolvi aplicar para
+            uma faculdade. Fui aprovado e decidi me mudar para Palmas para
+            estudar programação.
+          </p>
+
+          <p>
+            Mudando sozinho, consegui um emprego e lidei com tudo de forma
+            independente, mas sempre contando com o apoio da minha mãe. Hoje, estou
+            prestes a finalizar a faculdade de Sistemas para a Internet pelo
+            IFTO, com previsão de formação em 2024, e estou buscando uma posição
+            no mercado de trabalho na área de tecnologia, como estagiário ou
+            desenvolvedor Java júnior.
+          </p>
+
+          <p>
+            Meus Interesses e hobbies 🎸💻🎶📚🏐  incluem
+            programação, música, mangás, anime e vôlei.
+          </p>
+        </div>
+
+        <div class="col50">
+          <div class="imgBx">
+            <img
+              src="img/profile.png"
+              alt="Imagem de um jovem de 22 anos sorrindo com um fundo verde e camiseta gola polo azul"
+            />
+          </div>
+        </div>
+      </div>
+      <!--div row-->
+    </section>
+
+
+
+
+    <script type="text/javascript">
+        // Script para manipulação do menu e cabeçalho ao rolar a página
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    
+  </body>
+</html>
