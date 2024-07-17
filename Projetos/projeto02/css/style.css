@@ -1,17 +1,22 @@
 @charset "UTF-8";
+/* Importa as fontes do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@100;200;300;700;900&display=swap");
+
+/* Define estilos básicos para todos os elementos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Suaviza o scroll da página */
 }
 
+/* Define o peso da fonte para parágrafos */
 p {
   font-weight: 300;
 }
 
+/* Estiliza a seção do banner */
 .banner {
   position: relative;
   width: 100%;
@@ -19,27 +24,29 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/bg.jpg);
-  /*Usa a imagem como papel de parede do fundo*/
-  background-size: cover;
+  background-image: url(../images/bg.jpg); /* Usa uma imagem de fundo */
+  background-size: cover; /* Cobre toda a área do banner */
 }
 
- .banner .content {
+/* Estiliza o conteúdo do banner */
+.banner .content {
   max-width: 900px;
   text-align: center;
 }
 
-
+/* Estiliza o título no banner */
 .banner .content h2 {
   font-size: 5em;
   color: #fff;
 }
 
+/* Estiliza o parágrafo no banner */
 .banner .content p {
   font-size: 1em;
   color: #fff;
 }
 
+/* Estiliza o botão */
 .btn {
   font-size: 1em;
   color: #fff;
@@ -53,10 +60,12 @@ p {
   transition: 0.5s;
 }
 
+/* Estilo para o hover do botão */
 .btn:hover {
-  letter: spacing 6px;
+  letter-spacing: 6px;
 }
 
+/* Estiliza o cabeçalho */
 header {
   position: fixed;
   top: 0;
@@ -70,12 +79,14 @@ header {
   transition: 0.5s;
 }
 
+/* Estilo para o cabeçalho quando a página é rolada */
 header.sticky {
   background: #fff;
   padding: 10px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
+/* Estiliza o logo no cabeçalho */
 header .logo {
   color: #fff;
   font-weight: 700;
@@ -83,42 +94,51 @@ header .logo {
   text-decoration: none;
 }
 
+/* Muda a cor do logo quando o cabeçalho é rolado */
 header.sticky .logo {
   color: #111;
 }
 
+/* Estilo para o span no logo */
 header .logo span {
   color: #ff0157;
 }
 
+/* Estiliza a navegação no cabeçalho */
 header .navigation {
   position: relative;
   display: flex;
 }
 
+/* Estiliza os itens da navegação */
 header .navigation li {
   list-style: none;
   margin-left: 30px;
 }
 
+/* Estiliza os links na navegação */
 header .navigation li a {
   text-decoration: none;
   color: #fff;
   font-weight: 300;
 }
 
+/* Muda a cor dos links quando o cabeçalho é rolado */
 header.sticky .navigation li a {
   color: #111;
 }
 
+/* Estilo para o hover nos links quando o cabeçalho é rolado */
 header.sticky .navigation li a:hover {
   color: #ff0157;
-} */
+}
 
+/* Estiliza as seções */
 section {
   padding: 100px;
 }
 
+/* Estiliza as linhas */
 .row {
   position: relative;
   width: 100%;
@@ -126,39 +146,44 @@ section {
   justify-content: space-between;
 }
 
+/* Estiliza as colunas */
 .row .col50 {
   position: relative;
   width: 48%;
 }
 
+/* Estiliza o texto do título */
 .titletext {
   color: #111;
   font-size: 2em;
   font-weight: 300;
 }
 
+/* Estiliza o span no título */
 .titletext span {
   color: #ff0157;
   font-weight: 700;
   font-size: 1.5em;
 }
 
+/* Estiliza o contêiner da imagem */
 .row .col50 .imgBx {
   position: relative;
   width: 100%;
-  /*min-height: 300px;*/
   height: 100%;
 }
 
+/* Estiliza a imagem */
 .row .col50 .imgBx img {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Cobre o contêiner mantendo a proporção */
 }
 
+/* Estiliza o título */
 .title {
   width: 100%;
   display: flex;
@@ -167,6 +192,7 @@ section {
   flex-direction: column;
 }
 
+/* Estiliza o conteúdo do menu */
 .menu .content {
   display: flex;
   justify-content: center;
@@ -175,20 +201,22 @@ section {
   margin-top: 40px;
 }
 
+/* Estiliza as caixas no menu */
 .menu .content .box {
   width: 340px;
   margin: 20px;
   border: 15px solid #fff;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
-  /*criar o fundo branco da imagem*/
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08); /* Cria uma sombra */
 }
 
+/* Estiliza o contêiner da imagem nas caixas do menu */
 .menu .content .box .imgBx {
   position: relative;
   width: 100%;
   height: 300px;
 }
 
+/* Estiliza a imagem nas caixas do menu */
 .menu .content .box .imgBx img {
   position: absolute;
   top: 0;
@@ -198,15 +226,14 @@ section {
   object-fit: cover;
 }
 
+/* Estiliza o texto nas caixas do menu */
 .menu .content .box .text {
   padding: 15px 0 5px;
-}
-
-.menu .content .box .text {
   font-weight: 400;
   color: #111;
 }
 
+/* Estiliza o conteúdo dos especialistas */
 .expert .content {
   display: flex;
   justify-content: center;
@@ -215,17 +242,20 @@ section {
   margin-top: 40px;
 }
 
+/* Estiliza as caixas dos especialistas */
 .expert .content .box {
   width: 250px;
   margin: 15px;
 }
 
+/* Estiliza o contêiner da imagem nas caixas dos especialistas */
 .expert .content .box .imgBx {
   position: relative;
   width: 100%;
   height: 300px;
 }
 
+/* Estiliza a imagem nas caixas dos especialistas */
 .expert .content .box .imgBx img {
   position: absolute;
   top: 0;
@@ -235,24 +265,30 @@ section {
   object-fit: cover;
 }
 
+/* Estiliza o texto nas caixas dos especialistas */
 .expert .content .box .text {
   padding: 15px 0 15px;
 }
 
+/* Estiliza o título nas caixas dos especialistas */
 .expert .content .box .text h3 {
   font-weight: 400;
   color: #111;
 }
 
+/* Estiliza a seção de depoimentos */
 .testimonials {
   background-image: url(../images/bg2.jpg);
   background-size: cover;
 }
 
-.testimonials .white .titletext, .white p {
+/* Estiliza o texto branco nos depoimentos */
+.testimonials .white .titletext,
+.testimonials .white p {
   color: #fff;
 }
 
+/* Estiliza o conteúdo dos depoimentos */
 .testimonials .content {
   display: flex;
   justify-content: center;
@@ -261,6 +297,7 @@ section {
   margin-top: 40px;
 }
 
+/* Estiliza as caixas dos depoimentos */
 .testimonials .content .box {
   width: 340px;
   margin: 20px;
@@ -271,6 +308,7 @@ section {
   flex-direction: column;
 }
 
+/* Estiliza o contêiner da imagem nas caixas dos depoimentos */
 .testimonials .content .box .imgBx {
   position: relative;
   width: 100px;
@@ -281,6 +319,7 @@ section {
   overflow: hidden;
 }
 
+/* Estiliza a imagem nas caixas dos depoimentos */
 .testimonials .content .box .imgBx img {
   position: absolute;
   top: 0;
@@ -290,15 +329,18 @@ section {
   object-fit: cover;
 }
 
+/* Estiliza o texto nas caixas dos depoimentos */
 .testimonials .content .box .text {
   text-align: center;
 }
 
+/* Estiliza o parágrafo nas caixas dos depoimentos */
 .testimonials .content .box .text p {
   color: #666;
   font-style: italic;
 }
 
+/* Estiliza o título nas caixas dos depoimentos */
 .testimonials .content .box .text h3 {
   margin-top: 20px;
   font-size: 1em;
@@ -306,11 +348,13 @@ section {
   font-weight: 700;
 }
 
+/* Estiliza a seção de contato */
 .contact {
   background-image: url(../images/bg3.jpg);
   background-size: cover;
 }
 
+/* Estiliza o formulário de contato */
 .contactForm {
   padding: 75px 50px;
   background: #fff;
@@ -319,6 +363,7 @@ section {
   margin-top: 50px;
 }
 
+/* Estiliza o título no formulário de contato */
 .contactForm h3 {
   color: #111;
   font-size: 1.2em;
@@ -326,12 +371,14 @@ section {
   font-weight: 500;
 }
 
+/* Estiliza os contêineres de entrada no formulário de contato */
 .contactForm .inputBox {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
 }
 
+/* Estiliza os inputs e textarea no formulário de contato */
 .contactForm .inputBox input,
 .contactForm .inputBox textarea {
   width: 100%;
@@ -344,6 +391,7 @@ section {
   resize: none;
 }
 
+/* Estiliza o botão de submit no formulário de contato */
 .contactForm .inputBox input[type=submit] {
   font-size: 1em;
   color: #fff;
@@ -359,22 +407,26 @@ section {
   cursor: pointer;
 }
 
+/* Estiliza o texto de direitos autorais */
 .copyrightText {
   padding: 8px 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+/* Estiliza o parágrafo no texto de direitos autorais */
 .copyrightText p {
   color: #333;
 }
 
+/* Estiliza os links no texto de direitos autorais */
 .copyrightText a {
   color: #ff0157;
   font-weight: 500;
   text-decoration: none;
 }
 
+/* Estilizações para telas menores que 991px */
 @media (max-width: 991px) {
   header, header.stiky {
     padding: 10px 20px;
@@ -487,6 +539,7 @@ section {
   }
 }
 
+/* Estilizações para telas menores que 420px */
 @media (max-width: 420px) {
   .banner .content h2 {
     font-size: 2.2em;
@@ -494,18 +547,10 @@ section {
   }
 }
 
+/* Estilizações para telas menores que 390px */
 @media (max-width: 390px) {
   header.sticky {
     padding: 10px 20px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   }
 }
-/*
-1° APLICAR O SASS NO CÓDIGO
- - LEMBRAR DE APLICAR TODOS OS CONCEITOS DE SASS, CRIAR VÁRIAVÉIS PARA OS STILOS, DEIXAR O CÓDIGO O MAIS DINÂMICO POSSIVÉL PARA APLICAR MANUTENÇÕES FUTURAS.
-
- 2° COMENTAR O CÓDIGO, PRINCIPALMENTE FUNÇÕES QUE NÃO CONHECE. 
-
-*/
-
-/*# sourceMappingURL=style.css.map */

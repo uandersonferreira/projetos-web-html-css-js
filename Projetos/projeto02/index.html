@@ -1,144 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Declara o tipo de documento e define a linguagem como inglês -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Garante compatibilidade com diferentes versões do Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+    <title>Document</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">Food <span>.</span></a>
-        <div class="menuToggle" onclick="toggleMenu();"></div>
-        <ul class="navigation">
-            <li><a href="#banner"  onclick="toggleMenu();">Home</a></li>
-            <li><a href="#about"  onclick="toggleMenu();">About</a></li>
-            <li><a href="#menu"  onclick="toggleMenu();">Menu</a></li>
-            <li><a href="#expert"  onclick="toggleMenu();">Expert</a></li>
-            <li><a href="#testimonials"  onclick="toggleMenu();">Testimonials</a></li>
-            <li><a href="#contact"  onclick="toggleMenu();">Contact</a></li>
+        <!-- Cabeçalho do site -->
+        <a href="#" class="logo">Food <span>.</span></a> <!-- Logotipo do site com um link -->
+        <div class="menuToggle" onclick="toggleMenu();"></div> <!-- Ícone para abrir/fechar o menu -->
+        <ul class="navigation"> <!-- Lista de navegação -->
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li> <!-- Links de navegação que fecham o menu ao clicar -->
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </header>
 
     <section class="banner" id="banner">
+        <!-- Seção do banner principal -->
         <div class="content">
-            <h2>Always Choose Good</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore odit obcaecati, repellendus unde dolorem assumenda vero hic praesentium nostrum maiores.
-            </p>
-            <a href="#" class="btn"> Our Menu</a>
+            <h2>Always Choose Good</h2> <!-- Título do banner -->
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore odit obcaecati, repellendus unde dolorem assumenda vero hic praesentium nostrum maiores.</p> <!-- Texto do banner -->
+            <a href="#" class="btn"> Our Menu</a> <!-- Botão no banner -->
         </div>
     </section>
 
-    
-
     <section class="about" id="about">
+        <!-- Seção sobre nós -->
         <div class="row">
             <div class="col50">
-                <h2 class="titletext"><span>A</span>bout Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit accusamus in delectus inventore ipsam perspiciatis labore porro, qui quo non amet, deleniti eum. Non, explicabo tempore! Omnis ipsum commodi facilis.<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit molestiae esse nemo deserunt impedit dicta ipsam, dolorem, quae eius est totam pariatur dolore sequi commodi culpa quas tenetur ad.</p>
+                <h2 class="titletext"><span>A</span>bout Us</h2> <!-- Título da seção -->
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit accusamus in delectus inventore ipsam perspiciatis labore porro, qui quo non amet, deleniti eum. Non, explicabo tempore! Omnis ipsum commodi facilis.<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit molestiae esse nemo deserunt impedit dicta ipsam, dolorem, quae eius est totam pariatur dolore sequi commodi culpa quas tenetur ad.</p> <!-- Texto descritivo -->
             </div>
-
             <div class="col50">
-               <div class="imgBx">
-                   <img src="images/img1.jpg" alt="Imagem de uma pessoa segurando uma pizza">
-               </div>
+                <div class="imgBx">
+                    <img src="images/img1.jpg" alt="Imagem de uma pessoa segurando uma pizza"> <!-- Imagem na seção -->
+                </div>
             </div>
-
-
-        </div><!--div row-->
+        </div><!-- Fim da div row -->
     </section>
 
     <section class="menu" id="menu">
+        <!-- Seção do menu -->
         <div class="title">
-            <h2 class="titletext">Our <span>M</span>enu</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <h2 class="titletext">Our <span>M</span>enu</h2> <!-- Título da seção -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <!-- Texto descritivo -->
         </div>
-
         <div class="content">
+            <!-- Vários itens de menu -->
             <div class="box">
                 <div class="imgBx">
-                    <img src="images/menu1.jpg" alt="">
+                    <img src="images/menu1.jpg" alt=""> <!-- Imagem do item do menu -->
                 </div>
-
                 <div class="text">
-                    <h3>Special Salads</h3>
-                </div>             
+                    <h3>Special Salads</h3> <!-- Título do item do menu -->
+                </div>
             </div>
-
+            <!-- Repete o padrão para outros itens do menu -->
             <div class="box">
                 <div class="imgBx">
                     <img src="images/menu2.jpg" alt="">
                 </div>
                 <div class="text">
                     <h3>Special Soup</h3>
-                </div>             
+                </div>
             </div>
-
             <div class="box">
                 <div class="imgBx">
                     <img src="images/menu3.jpg" alt="">
                 </div>
-
                 <div class="text">
                     <h3>Special paste</h3>
-                </div>             
+                </div>
             </div>
-
             <div class="box">
                 <div class="imgBx">
                     <img src="images/menu4.jpg" alt="">
                 </div>
-
                 <div class="text">
                     <h3>Special Salads</h3>
-                </div>             
+                </div>
             </div>
-
             <div class="box">
                 <div class="imgBx">
                     <img src="images/menu5.jpg" alt="">
                 </div>
-
                 <div class="text">
                     <h3>Special Soup</h3>
-                </div>             
+                </div>
             </div>
-
             <div class="box">
                 <div class="imgBx">
                     <img src="images/menu6.jpg" alt="">
                 </div>
-
                 <div class="text">
                     <h3>Special Salads</h3>
-                </div>             
+                </div>
             </div>
-       </div><!--div content-->
-
-       <div class="title">
-         <a href="#" class="btn"> View All</a>
-      </div>
+        </div><!-- Fim da div content -->
+        <div class="title">
+            <a href="#" class="btn"> View All</a> <!-- Botão para ver todos os itens do menu -->
+        </div>
     </section>
 
     <section class="expert" id="expert">
+        <!-- Seção dos especialistas da cozinha -->
         <div class="title">
-            <h2 class="titletext">Our Kitchen <span>E</span>xpert</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <h2 class="titletext">Our Kitchen <span>E</span>xpert</h2> <!-- Título da seção -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <!-- Texto descritivo -->
         </div>
-
         <div class="content">
+            <!-- Vários especialistas da cozinha -->
             <div class="box">
                 <div class="imgBx">
-                    <img src="images/expert1.jpg" alt="Foto de um Chefe de cozinha">
+                    <img src="images/expert1.jpg" alt="Foto de um Chefe de cozinha"> <!-- Imagem do especialista -->
                 </div>
                 <div class="text">
-                    <h3>Someone Famous</h3>
+                    <h3>Someone Famous</h3> <!-- Nome do especialista -->
                 </div>
             </div>
+            <!-- Repete o padrão para outros especialistas -->
             <div class="box">
                 <div class="imgBx">
                     <img src="images/expert2.jpg" alt="Foto de um Chefe de cozinha">
@@ -167,20 +155,23 @@
     </section>
 
     <section class="testimonials" id="testimonials">
+        <!-- Seção de depoimentos -->
         <div class="title white">
-            <h2 class="titletext">They <span>S</span>aid About Us</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <h2 class="titletext">They <span>S</span>aid About Us</h2> <!-- Título da seção -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <!-- Texto descritivo -->
         </div>
         <div class="content">
+            <!-- Vários depoimentos -->
             <div class="box">
                 <div class="imgBx">
-                    <img src="images/testi1.jpg" alt="imagem de uma jovem mulher">
+                    <img src="images/testi1.jpg" alt="imagem de uma jovem mulher"> <!-- Imagem do depoente -->
                 </div>
                 <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aspernatur qui voluptatem esse, sapiente ex debitis mollitia delectus ipsam ratione vitae voluptas maiores pariatur consequatur.</p>
-                    <h3>Someone Famous</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aspernatur qui voluptatem esse, sapiente ex debitis mollitia delectus ipsam ratione vitae voluptas maiores pariatur consequatur.</p> <!-- Texto do depoimento -->
+                    <h3>Someone Famous</h3> <!-- Nome do depoente -->
                 </div>
             </div>
+            <!-- Repete o padrão para outros depoimentos -->
             <div class="box">
                 <div class="imgBx">
                     <img src="images/testi2.jpg" alt="imagem de uma jovem mulher">
@@ -199,53 +190,49 @@
                     <h3>Someone Famous</h3>
                 </div>
             </div>
-        </div><!--div content-->
+        </div><!-- Fim da div content -->
     </section>
 
     <section class="contact" id="contact">
+        <!-- Seção de contato -->
         <div class="title">
-          <h2 class="titletext"><span>C</span>ontact Us</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <h2 class="titletext"><span>C</span>ontact Us</h2> <!-- Título da seção -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> <!-- Texto descritivo -->
         </div>
         <div class="contactForm">
-            <h3>Send Message</h3>
+            <h3>Send Message</h3> <!-- Título do formulário de contato -->
             <div class="inputBox">
-                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Name"> <!-- Campo de entrada para nome -->
             </div>
             <div class="inputBox">
-                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Email"> <!-- Campo de entrada para email -->
             </div>
             <div class="inputBox">
-                <textarea name="comentario" id="comentario" placeholder="Comentário"></textarea>
+                <textarea name="comentario" id="comentario" placeholder="Comentário"></textarea> <!-- Campo de texto para comentário -->
             </div>
             <div class="inputBox">
-                <input type="submit" placeholder="Send" value="send">
+                <input type="submit" placeholder="Send" value="send"> <!-- Botão de envio -->
             </div>
         </div>
     </section>
 
     <footer class="copyrightText">
-        <p>Copyright 2022 <a href="#">Onlline Tutorials</a>. All Right Reserved</p>
+        <p>Copyright 2022 <a href="#">Onlline Tutorials</a>. All Right Reserved</p> <!-- Rodapé com aviso de direitos autorais -->
     </footer>
 
-    
     <script type="text/javascript">
-
+        // Script para manipulação do menu e cabeçalho ao rolar a página
         window.addEventListener('scroll', function(){
             const header = document.querySelector('header');
             header.classList.toggle("sticky", window.scrollY > 0);
-
         });
 
         function toggleMenu(){
-           const menuToggle = document.querySelector('.menuToggle');
-           const navigation = document.querySelector('.navigation')
-           menuToggle.classList.toggle('active');
-           navigation.classList.toggle('active');
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
         }
-    
-
     </script>
-    
 </body>
 </html>
