@@ -1,6 +1,7 @@
 # Sumário
 
-- [Projetos web com HTML, CSS e JavaScript](#projetos-web-com-html-css-e-javascript)
+- [projetos-youtube web com HTML, CSS e JavaScript](#projetos-web-com-html-css-e-javascript)
+    - [My Portifolio](#myportifolio)
     - [Projeto 1](#projeto-1)
     - [Projeto 2](#projeto-2)
     - [Projeto 4](#projeto-4)
@@ -10,9 +11,14 @@
     - [Projeto 9](#projeto-9)
     - [Projeto 10](#projeto-10)
 
-# Projetos web com HTML, CSS e JavaScript
+# Projetos-youtube web com HTML, CSS e JavaScript
 
 Repositório central dos projetos web, voltado para o estudo de desenvolvimento web, através de projetos pessoais e de terceiros do youtuber.
+
+## My portifolio (em andamento)
+
+- Link do projeto: [Portifolio](https://uandersonferreira.github.io/projetos-web-html-css-js/my-portifolio)
+
 
 ## Projeto 1
 
@@ -21,7 +27,7 @@ Repositório central dos projetos web, voltado para o estudo de desenvolvimento 
     - HTML5
     - CSS3
 - ![Página de Login](Imagens-projects/projeto1.png)
-- Link do projeto: [Projeto 1](https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto01/)
+- Link do projeto: [Projeto 1](https://uandersonferreira.github.io/projetos-web-html-css-js/projetos-youtube/projeto01/)
 - Link do tutorial: [Tutorial](https://www.youtube.com/watch?v=69-WfrVBli8)
 - [Voltar ao Sumário](#sumário)
 
@@ -39,7 +45,7 @@ Repositório central dos projetos web, voltado para o estudo de desenvolvimento 
 - ![Expert](Imagens-projects/projeto2-5.png)
 - ![Testimonial](Imagens-projects/projeto2-6.png)
 - ![Contact](Imagens-projects/projeto2-7.png)
-- Link do projeto: [Projeto 2](https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto02/)
+- Link do projeto: [Projeto 2](https://uandersonferreira.github.io/projetos-web-html-css-js/projetos-youtube/projeto02/)
 - Link do tutorial: [Tutorial](https://www.youtube.com/watch?v=ac5nmWOkBEY)
 - [Voltar ao Sumário](#sumário)
 
@@ -54,7 +60,7 @@ Repositório central dos projetos web, voltado para o estudo de desenvolvimento 
 ![Gerador de QRcode](Imagens-projects/proejeto4-1.png)
 ### 2°- Gerando o QRcode baseado na URL passada
 ![Gerador de QRcode](Imagens-projects/projeto4-2.png)
-- Link do projeto: [Projeto 4](https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto04/)
+- Link do projeto: [Projeto 4](https://uandersonferreira.github.io/projetos-web-html-css-js/projetos-youtube/projeto04/)
 - Link do tutorial: [Tutorial](https://www.youtube.com/watch?v=UOIDhGCGCio)
 - [Voltar ao Sumário](#sumário)
 
@@ -67,7 +73,7 @@ Repositório central dos projetos web, voltado para o estudo de desenvolvimento 
 - ![Site de Vendas](Imagens-projects/projeto5-1.png)
 - ![Site de Vendas](Imagens-projects/projeto5-2.png)
 - ![Site de Vendas](Imagens-projects/projeto5-3.png)
-- Link do projeto: [Projeto 5](https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto05/)
+- Link do projeto: [Projeto 5](https://uandersonferreira.github.io/projetos-web-html-css-js/projetos-youtube/projeto05/)
 - Link do tutorial: [Tutorial](https://www.youtube.com/watch?v=ngKPeseBlmc&list=PLOfKzAi2JkAgYAH-lwDzLqXwNdYAWtyei)
 - [Voltar ao Sumário](#sumário)
 
@@ -78,7 +84,7 @@ Repositório central dos projetos web, voltado para o estudo de desenvolvimento 
     - HTML5
     - CSS3
 - ![Banner](Imagens-projects/projeto6.png)
-- Link do projeto: [Projeto 6](https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto06/)
+- Link do projeto: [Projeto 6](https://uandersonferreira.github.io/projetos-web-html-css-js/projetos-youtube/projeto06/)
 - Link do tutorial: [Tutorial](https://www.youtube.com/watch?v=rboSA7728kk&list=PLOfKzAi2JkAii9XnoLx3r6jsCdg4bs4t7)
 - [Voltar ao Sumário](#sumário)
 
@@ -91,15 +97,15 @@ Repositório central dos projetos web, voltado para o estudo de desenvolvimento 
 - ![Home](Imagens-projects/projeto8-1.png)
 - ![Home](Imagens-projects/projeto8-2.png)
 - ![Home](Imagens-projects/projeto8-3.png)
-- Link do projeto: [Projeto 8](https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto08/)
+- Link do projeto: [Projeto 8](https://uandersonferreira.github.io/projetos-web-html-css-js/projetos-youtube/projeto08/)
 - [Voltar ao Sumário](#sumário)
 
 ## Projeto 9
 
-- Link do projeto: [Projeto 9](https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto09/)
+- Link do projeto: [Projeto 9](https://uandersonferreira.github.io/projetos-web-html-css-js/projetos-youtube/projeto09/)
 - [Voltar ao Sumário](#sumário)
 
 ## Projeto 10
 
-- Link do projeto: [Projeto 10](https://uandersonferreira.github.io/projetos-web-html-css-js/Projetos/projeto010/)
+- Link do projeto: [Projeto 10](https://uandersonferreira.github.io/projetos-web-html-css-js/projetos-youtube/projeto010/)
 - [Voltar ao Sumário](#sumário)
