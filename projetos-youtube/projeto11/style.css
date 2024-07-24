@@ -1,0 +1,100 @@
+  /* Zera as margens e os preenchimentos de todos os elementos e define o 
+  box-sizing para border-box, o que faz com que padding e border sejam 
+  incluídos na largura e altura totais do elemento */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Define a cor de fundo do body como um cinza claro */
+body {
+  background: #f2f2f2;
+}
+
+/* Define uma animação chamada 'slide' que move os elementos de sua 
+posição inicial (translateX(0)) para -100% ao longo do tempo */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Define a div com a classe 'logos':
+    - overflow: hidden esconde qualquer conteúdo que ultrapasse as bordas do elemento
+    - padding: 60px em cima e embaixo, 0 nas laterais
+    - white-space: nowrap impede a quebra de linha dentro do elemento
+    - background: white define a cor de fundo como branco
+    - position: relative para permitir a posição absoluta de elementos filhos */
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  background: white;
+  position: relative;
+}
+
+
+/* Define pseudo-elementos antes e depois da div 'logos':
+    - position: absolute para posicioná-los relativamente ao elemento pai
+    - top: 0 posiciona-os no topo do elemento pai
+    - width: 250px define a largura dos pseudo-elementos
+    - height: 100% define a altura como igual à altura do elemento pai
+    - content: "" cria os pseudo-elementos
+    - z-index: 2 coloca-os acima do conteúdo da div 'logos' */
+.logos::before,
+.logos::after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+
+/* Define o pseudo-elemento ::before à esquerda:
+    - left: 0 posiciona-o na extremidade esquerda do elemento pai
+    - background: linear-gradient(to left,rgba(255,255,255,0), white) cria um gradiente
+     que vai de transparente a branco da esquerda para a direita */
+.logos::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+
+/* Define o pseudo-elemento ::after à direita:
+    - right: 0 posiciona-o na extremidade direita do elemento pai
+    - background: linear-gradient(to right,rgba(255,255,255,0), white) cria um gradiente
+     que vai de transparente a branco da direita para a esquerda */
+.logos::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+/* Pausa a animação da classe 'logos-slide' quando a div 'logos' é hoverada */
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+/* Define a div com a classe 'logos-slide':
+    - display: inline-block para permitir margens horizontais sem quebras de linha
+    - animation: 15s slide infinite linear aplica a animação 'slide' por 15 segundos
+    em um loop infinito e com um movimento linear */
+.logos-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+/* Define as imagens dentro da classe 'logos-slide':
+    - height: 50px define a altura das imagens
+    - margin: 0 40px aplica margens horizontais de 40px e margens verticais de 0 */
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
