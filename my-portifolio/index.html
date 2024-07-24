@@ -10,7 +10,7 @@
     <header>
       <a href="#" class="logo">Uanderson <span>.</span></a>
       <div class="menuToggle" onclick="toggleMenu();"></div>
-      <ul class="navigation">
+      <ul class="navegacao">
         <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
         <li><a href="#about" onclick="toggleMenu();">Sobre</a></li>
         <li><a href="#project" onclick="toggleMenu();">Projetos</a></li>
@@ -19,8 +19,8 @@
     </header>
 
     <section class="banner" id="banner">
-      <div class="content">
-        <h2>Desenvolvedor Backend Java</h2>
+      <div class="conteudo">
+        <h1>Desenvolvedor Backend Java</h1>
         <p>
           Sou um entusiasta da tecnologia no início da carreira, sempre buscando
           aprender e me desenvolver. Com uma curiosidade incessante e paixão por
@@ -32,7 +32,7 @@
       </div>
 
       <div>
-        <ul class="social__media">
+        <ul class="redes-sociais">
           <li>
             <a href="#" title="Acesse meu Linkedin através desse link">
               <img src="img/icons8-linkedin.svg" alt="">
@@ -58,8 +58,8 @@
     </section>
 
     <section class="about" id="about">
-      <div class="row">
-        <div class="col50">
+      <div class="linha">
+        <div class="coluna50">
           <h2 class="titletext">#<span>S</span>obre mim 🚀</h2>
           <p>
             Sou um jovem de 22 anos, crescido numa cidade pequena do estado de
@@ -90,8 +90,8 @@
           </p>
         </div>
 
-        <div class="col50">
-          <div class="imgBx">
+        <div class="coluna50">
+          <div class="img-bx">
             <img
               src="img/profile.png"
               alt="Imagem de um jovem de 22 anos sorrindo com um fundo verde e camiseta gola polo azul"
@@ -99,7 +99,7 @@
           </div>
         </div>
       </div>
-      <!--div row-->
+      <!--div linha-->
     </section>
 
     <section class="logos">
@@ -136,9 +136,9 @@
 
         function toggleMenu(){
             const menuToggle = document.querySelector('.menuToggle');
-            const navigation = document.querySelector('.navigation')
+            const navegacao = document.querySelector('.navegacao')
             menuToggle.classList.toggle('active');
-            navigation.classList.toggle('active');
+            navegacao.classList.toggle('active');
         }
 
         //Script para duplicar images das tecnologias para o efeito de rolagem infinita
