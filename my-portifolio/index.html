@@ -101,6 +101,31 @@
       </div>
       <!--div row-->
     </section>
+
+    <section class="logos">
+      <div class="logos-slide">
+        <img src="img/logos/angular-svgrepo-com.svg" alt="Logo da tecnologia Angular">
+
+        <img src="img/logos/css-3-svgrepo-com.svg" alt="Logo da tecnologia CSS3">
+
+        <img src="img/logos/docker-logo-svgrepo-com.svg" alt="Logo da tecnologia Docker">
+
+        <img src="img/logos/gnu-linux-svgrepo-com.svg" alt="Logo Do sistema operacional Linux">
+
+        <img src="img/logos/hibernate-svgrepo-com.svg" alt="Logo da tecnologia Hibernate implementação do JPA">
+
+        <img src="img/logos/html-5-svgrepo-com.svg" alt="Logo da tecnologia HTML5">
+
+        <img src="img/logos/java-logo-svgrepo-com.svg" alt="Logo da tecnologia Java">
+
+        <img src="img/logos/javascript-svgrepo-com.svg" alt="Logo da tecnologia JavaScript">
+
+        <img src="img/logos/postgresql-svgrepo-com.svg" alt="Logo do database Postgresql">
+
+        <img src="img/logos/spring-svgrepo-com.svg" alt="Logo da tecnologia Spring">
+    </div>
+    </section>
+
     
     <script type="text/javascript">
         // Script para manipulação do menu e cabeçalho ao rolar a página
@@ -115,6 +140,12 @@
             menuToggle.classList.toggle('active');
             navigation.classList.toggle('active');
         }
+
+        //Script para duplicar images das tecnologias para o efeito de rolagem infinita
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector('.logos').appendChild(copy);
+
+        
     </script>
     
   </body>
