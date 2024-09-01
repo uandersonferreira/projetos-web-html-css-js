@@ -330,7 +330,10 @@ posição inicial (translateX(0)) para -100% ao longo do tempo */
 .logos-slide img {
   height: 50px;
   margin: 0 40px;
+  pointer-events: none;
+
 }
+
 
 /* FIM DO SCROLL DE ROLAGEM DAS TECNOLOGIAS */
 
