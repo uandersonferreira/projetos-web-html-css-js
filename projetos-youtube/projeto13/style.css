@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: white;
+    background-color: #007bff;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+#transaction-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#description, #value {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.type-selection {
+    display: flex;
+    align-items: center;
+}
+
+.type-selection label {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.table-section {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tipo-entrada {
+    color: green;
+}
+
+.tipo-saida {
+    color: red;
+}
+
+.delete-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.delete-btn:hover {
+    color: white;
+    background-color: red;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    #transaction-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #description, #value {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #transaction-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #description, #value {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    thead th, tbody td {
+        padding: 8px;
+    }
+}

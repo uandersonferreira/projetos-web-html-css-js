@@ -18,9 +18,9 @@
   --blue-04: #040714;
   --blue-05: #090b13;
 
-  --black: #000
+  --black: #000;
   --black-01: #1e1e24;
-  --black-02: #rgb(4, 5, 5);
+  --black-02: rgb(4, 5, 5);
   --eerie-black: #191919;
 
   --cinnabar: #e94f37;

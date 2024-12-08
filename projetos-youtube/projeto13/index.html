@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Finanças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Organizador de finanças</h1>
+        </header>
+        
+        <div class="cards">
+            <div class="card">
+                <p>Entradas</p>
+                <span>R$ 2000.00</span>
+            </div>
+            <div class="card">
+                <p>Saídas</p>
+                <span>R$ 700.00</span>
+            </div>
+            <div class="card">
+                <p>Total</p>
+                <span>R$ 1300.00</span>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Descrição" required>
+                <input type="number" id="value" placeholder="Valor" required>
+                
+                <div class="type-selection">
+                    <input type="radio" name="type" id="entrada" value="entrada" checked>
+                    <label for="entrada">Entrada</label>
+                    <input type="radio" name="type" id="saida" value="saida">
+                    <label for="saida">Saída</label>
+                </div>
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+        <div class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Tipo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Salário</td>
+                        <td>2000</td>
+                        <td><span class="tipo-entrada">&#x2705;</span></td> <!-- Entrada -->
+                        <td><button class="delete-btn">&#x1F5D1;</button></td>
+                    </tr>
+                    <tr>
+                        <td>compra</td>
+                        <td>600</td>
+                        <td><span class="tipo-saida">&#x274C;</span></td> <!-- Saída -->
+                        <td><button class="delete-btn">&#x1F5D1;</button></td>
+                    </tr>
+                    <tr>
+                        <td>academia</td>
+                        <td>100</td>
+                        <td><span class="tipo-saida">&#x274C;</span></td> <!-- Saída -->
+                        <td><button class="delete-btn">&#x1F5D1;</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
