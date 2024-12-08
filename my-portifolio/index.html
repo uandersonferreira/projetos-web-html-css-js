@@ -145,6 +145,11 @@
           </p>
           <a href="#" class="projeto_btn">Deploy</a>
           <a href="#" class="projeto_btn">Código Fonte</a>
+
+          <div class="status">
+            <p>Status: <span>Em andamento</span></p>
+          </div>
+
         </article>
       </div>
       <!-- Paginação -->
@@ -197,11 +202,13 @@
 
             <form action="https://formsubmit.co/uandersonferreiradeoliveira@gmail.com" method="POST">
 
-              <input type="hidden" name="_next" value="https://uandersonferreira.github.io/projetos-web-html-css-js/my-portifolio/sucesso.html">
+              <input type="hidden" name="_next"
+                value="https://uandersonferreira.github.io/projetos-web-html-css-js/my-portifolio/sucesso.html">
 
               <input type="hidden" name="_template" value="table">
 
-              <input type="hidden" name="_blacklist" value="viagra, casino, SELECT, INSERT, UPDATE, DELETE, DROP, TRUNCATE, UNION, JOIN, WHERE, <script>, <iframe>, <img src=, <embed>, <object>, javascript:, eval(, onerror, onload, http://, https://, malware, vírus, trojan, worm, spyware, ransomware, keylogger, confidencial, senha, conta, banco, cartão, cpf, rg, login, urgente, xss, csrf, sql injection, buffer overflow">
+              <input type="hidden" name="_blacklist"
+                value="viagra, casino, SELECT, INSERT, UPDATE, DELETE, DROP, TRUNCATE, UNION, JOIN, WHERE, <script>, <iframe>, <img src=, <embed>, <object>, javascript:, eval(, onerror, onload, http://, https://, malware, vírus, trojan, worm, spyware, ransomware, keylogger, confidencial, senha, conta, banco, cartão, cpf, rg, login, urgente, xss, csrf, sql injection, buffer overflow">
 
 
               <div class="form_group">
@@ -259,6 +266,22 @@
     //Script para duplicar images das tecnologias para o efeito de rolagem infinita
     var copy = document.querySelector(".logos-slide").cloneNode(true);
     document.querySelector(".logos").appendChild(copy);
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const logos = document.querySelector('.projeto_logos');
+
+      // Pausa a animação ao tocar
+      logos.addEventListener('touchstart', function () {
+        logos.classList.add('paused');
+      });
+
+      // Retoma a animação ao liberar o toque
+      logos.addEventListener('touchend', function () {
+        logos.classList.remove('paused');
+      });
+    });
+
 
   </script>
 </body>

@@ -315,6 +315,18 @@ posição inicial (translateX(0)) para -100% ao longo do tempo */
   animation-play-state: paused;
 }
 
+/* Continua pausando a animação ao usar a classe modificada */
+.logos-slide {
+  animation-play-state: running;
+}
+
+.logos.paused .logos-slide {
+  animation-play-state: paused;
+}
+
+
+
+
 /* Define a div com a classe 'logos-slide':
     - display: inline-block para permitir margens horizontais sem quebras de linha
     - animation: 15s slide infinite linear aplica a animação 'slide' por 15 segundos
@@ -434,6 +446,21 @@ posição inicial (translateX(0)) para -100% ao longo do tempo */
 
 .pagination_prev, .pagination_next {
   font-weight: bold; /* Define o peso da fonte */
+}
+
+.status{
+  display: flex;
+  justify-content: right;
+  margin-top: 16px;
+}
+
+.status > p{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.status > p > span{
+  color: #002ab3;
 }
 
 /* Estilo para a seção de projetos FIM */
@@ -686,6 +713,10 @@ posição inicial (translateX(0)) para -100% ao longo do tempo */
     margin-top: 20px;
     margin-bottom: 30px;
   }
+
+  .status {
+    justify-content: left;
+  }
 }
 
 /* Responsividade about*/
@@ -736,6 +767,7 @@ posição inicial (translateX(0)) para -100% ao longo do tempo */
     .form_group{
       text-align: start;
     }
+
 
 }
 
