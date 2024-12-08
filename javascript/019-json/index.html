@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Curso Javascript Completo:  Aula 19 - JSON </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        font-family: "Poppins", sans-serif;
+    }
+    p{
+        letter-spacing: 1.5px;
+    }
+
+</style>
+   
+</head>
+<body>
+
+    <h1>Curso Javascript Completo: Aula 19 - JSON</h1>
+    <hr>
+
+    <p id="area"></p>
+    <p id="area2"></p>
+
+    
+    <input id="cep" type="text" placeholder="Digite o seu CEP">
+    <button onclick="buscarCep()">Buscar</button>
+    <p id="texto"></p>
+
+    <hr>
+    <h1>Formulário de Cadastro</h1>
+    <form id="formulario">
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep-form" name="cep" placeholder="Digite o CEP" required>
+      <button type="button" onclick="buscarCepForm()">Buscar CEP</button>
+      <br><br>
+      <label for="logradouro">Logradouro:</label>
+      <input type="text" id="logradouro" name="logradouro" >
+      <br><br>
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" >
+      <br><br>
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" >
+      <br><br>
+      <button type="submit">Cadastrar</button>
+    </form>
+
+
+    
+
+    
+    <script src="index.js"></script>
+</body>
+</html>

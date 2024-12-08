@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Curso Javascript Completo: Aula 16 - SetTimeout e SetInterval </title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        input{
+            padding: 50px;
+            font-size: 40px;
+            width: 80%;
+        }
+        button{
+            padding: 40px;
+            margin: 10px;
+            border: 2px solid black;
+            font-size: 20px;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+        .start{
+            background: green;
+        }
+        .start-2{
+            background: rgb(196, 145, 5);
+        }
+        .stop{
+            background: tomato;
+        }
+        .stop-2{
+            background: rgb(151, 3, 144);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Curso Javascript Completo: Aula 16 - SetTimeout e SetInterval</h1>
+    <hr>
+
+    <h2>Controle de Tempo</h2>
+    <h3 id="tempo">0</h3>
+    <h3 id="tempo2">10</h3>
+
+    <button onclick="ativarContagemSetTimeout()" class="start">Ativar Contagem SetTimeout</button>
+    <button onclick="ativarContagemSetInterval()" class="start-2">Ativar Contagem SetInterval</button>
+    <button onclick="pararContagem()" class="stop">Parar Contagem</button>
+    <button onclick="pararContagemSetInterval()" class="stop-2">Parar Contagem setInterval</button>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
