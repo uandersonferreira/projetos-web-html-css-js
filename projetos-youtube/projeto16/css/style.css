@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eee;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 15px;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    margin: auto auto;
+}
+
+input{
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 4%;
+}
+
+button.add{
+    width: 20%;
+    cursor: pointer;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin:  auto auto;
+    /* border: 1px solid blue; */
+    padding-top: 40px;
+    margin-top: 10px;
+}
+
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.item.clicado{
+    background: #d4f6d9;
+}
+
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item-icone{
+    flex: 15%;
+    /* border: 1px solid orangered; */
+    text-align: center;
+    font-size: 2rem;
+}
+
+.item-nome{
+    flex: 60%;
+    /* border: 1px solid deeppink; */
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.item-botao{
+    flex: 25%;
+    display: flex;
+    /* border: 1px solid green; */
+}
+
+.delete{
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+}
+
+/* class - da biblioteca de icons, não foi nos que criamos */
+.mdi-check-circle{
+    color: green;
+    /* 
+        icons é como se fosse uma fonte, por isso usamos as propriedades de estilo que usamos ao estilizar uma fonte.
+    */
+}
+
+
+button.edit {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Estilo do contêiner flutuante de edição */
+.edit-container {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 100;
+    width: 80%;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo do campo de entrada */
+.edit-container input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo do botão de salvar */
+.edit-container button {
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.edit-container button:hover {
+    background: #218838;
+}
+
+/* Estilo do botão de cancelar */
+.edit-container .cancel-btn {
+    background: #dc3545;
+    margin-left: 10px;
+}
+
+.edit-container .cancel-btn:hover {
+    background: #c82333;
+}
+
+/* Oculta o formulário quando não está ativo */
+.edit-container.hidden {
+    display: none;
+}

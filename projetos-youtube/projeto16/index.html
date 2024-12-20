@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+
+    <title>Projeto Lista de Tarefas</title>
+</head>
+<body>
+
+    <h1>Lista de Tarefas</h1>
+
+    <header>
+        <input id="inputTarefa" type="text" placeholder="Digite sua tarefa">
+        
+        <button 
+        id="btn-add" 
+        class="add" 
+        onclick="addTarefa()"
+        > 
+        Adicionar
+    </button>
+
+    </header>
+
+    <main id="areaLista">
+
+    </main>
+
+    <div id="editContainer" class="edit-container hidden">
+        <input id="editInput" type="text" placeholder="Edite sua tarefa" />
+        <button onclick="salvarEdicao()">Salvar</button>
+        <button class="cancel-btn" onclick="fecharEdicao()">Cancelar</button>
+    </div>
+    
+    <script src="js/controle.js"></script>
+</body>
+
+</html>
