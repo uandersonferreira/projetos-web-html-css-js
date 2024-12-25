@@ -310,11 +310,6 @@ posição inicial (translateX(0)) para -100% ao longo do tempo */
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-/* Pausa a animação da classe 'logos-slide' quando a div 'logos' é hoverada */
-.logos:hover .logos-slide {
-  animation-play-state: paused;
-}
-
 
 /* Define a div com a classe 'logos-slide':
     - display: inline-block para permitir margens horizontais sem quebras de linha
@@ -333,6 +328,25 @@ posição inicial (translateX(0)) para -100% ao longo do tempo */
   margin: 0 40px;
 
 }
+
+/* Regras existentes para desktop */
+@media (hover: hover) {
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+}
+
+/* Novas regras para mobile */
+@media (hover: none) {
+  .logos {
+    cursor: pointer;
+  }
+  
+  .logos.paused .logos-slide {
+    animation-play-state: paused;
+  }
+}
+
 
 
 /* FIM DO SCROLL DE ROLAGEM DAS TECNOLOGIAS */

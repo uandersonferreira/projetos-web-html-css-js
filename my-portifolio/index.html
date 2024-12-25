@@ -111,13 +111,11 @@
 
         <img src="assets/img/logos/java-logo-svgrepo-com.svg" alt="Logo da tecnologia Java" title="Java" />
 
-        <img src="assets/img/logos/javascript-svgrepo-com.svg" alt="Logo da tecnologia JavaScript"
-          title="JavaScript" />
+        <img src="assets/img/logos/javascript-svgrepo-com.svg" alt="Logo da tecnologia JavaScript" title="JavaScript" />
 
         <img src="assets/img/logos/postgresql-svgrepo-com.svg" alt="Logo do database PostgreSQL" title="PostgreSQL" />
 
-        <img src="assets/img/logos/spring-svgrepo-com.svg" alt="Logo da tecnologia Spring"
-          title="Ecossistema Spring" />
+        <img src="assets/img/logos/spring-svgrepo-com.svg" alt="Logo da tecnologia Spring" title="Ecossistema Spring" />
       </div>
     </section>
     <!-- carrosel infinito das logos FIM-->
@@ -276,11 +274,6 @@
       navigation.classList.toggle("active");
     }
 
-    //Script para duplicar images das tecnologias para o efeito de rolagem infinita
-    var copy = document.querySelector(".logos-slide").cloneNode(true);
-    document.querySelector(".logos").appendChild(copy);
-
-
     document.addEventListener('DOMContentLoaded', function () {
       const logos = document.querySelector('.projeto_logos');
 
@@ -297,43 +290,70 @@
 
 
     document.getElementById('contact-form').addEventListener('submit', function (event) {
-  event.preventDefault(); // Impede o envio padrão do formulário
+      event.preventDefault(); // Impede o envio padrão do formulário
 
-  const form = event.target; // Captura o formulário
-  const formData = new FormData(form); // Cria um objeto FormData com os dados do formulário
+      const form = event.target; // Captura o formulário
+      const formData = new FormData(form); // Cria um objeto FormData com os dados do formulário
 
-  // Converte o FormData para um objeto JSON
-  const jsonData = {};
-  formData.forEach((value, key) => {
-    jsonData[key] = value;
-  });
+      // Converte o FormData para um objeto JSON
+      const jsonData = {};
+      formData.forEach((value, key) => {
+        jsonData[key] = value;
+      });
 
-  // Envia os dados usando fetch com os headers corretos
-  fetch("https://formsubmit.co/ajax/uandersonferreiradeoliveira@gmail.com", {
-    method: "POST",
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-    },
-    body: JSON.stringify(jsonData) // Dados em formato JSON
-  })
-    .then(response => {
-      if (response.ok) {
-        return response.json();
-      } else {
-        throw new Error('Erro ao enviar mensagem. Verifique os dados e tente novamente.');
-      }
-    })
-    .then(data => {
-      console.log('Mensagem enviada com sucesso:', data);
-      // Redireciona para a página de sucesso
-      window.location.href = "https://uandersonferreira.github.io/projetos-web-html-css-js/my-portifolio/sucesso.html";
-    })
-    .catch(error => {
-      console.error('Erro no envio:', error);
-      alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.');
+      // Envia os dados usando fetch com os headers corretos
+      fetch("https://formsubmit.co/ajax/uandersonferreiradeoliveira@gmail.com", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(jsonData) // Dados em formato JSON
+      })
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error('Erro ao enviar mensagem. Verifique os dados e tente novamente.');
+          }
+        })
+        .then(data => {
+          console.log('Mensagem enviada com sucesso:', data);
+          // Redireciona para a página de sucesso
+          window.location.href = "https://uandersonferreira.github.io/projetos-web-html-css-js/my-portifolio/sucesso.html";
+        })
+        .catch(error => {
+          console.error('Erro no envio:', error);
+          alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.');
+        });
     });
-});
+
+    // Controle do slider de logos
+    document.addEventListener('DOMContentLoaded', function () {
+      // Cria uma cópia do slide para a animação infinita
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
+
+      // Adiciona controles de toque
+      const logosContainer = document.querySelector('.logos');
+
+      // Toggle de pausa no toque
+      let touchTimeout;
+
+      logosContainer.addEventListener('touchstart', function (e) {
+        this.classList.add('paused');
+        // Previne scroll da página durante o toque
+        e.preventDefault();
+      });
+
+      logosContainer.addEventListener('touchend', function () {
+        // Remove a pausa após 300ms para permitir ver o título
+        clearTimeout(touchTimeout);
+        touchTimeout = setTimeout(() => {
+          this.classList.remove('paused');
+        }, 300);
+      });
+    });
 
 
 
